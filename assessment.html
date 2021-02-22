@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h2>TEXT</h2>
+</head>
+<style>
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  td, th {
+  border: 1px solid;
+  text-align: left;
+  padding: 10px;
+  }
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  }
+</style>
+
+<body>
+
+  <p>
+    <font size="+1">
+      <b>Lorem</b> ipsum dolor sit amet, consectetur adipisicing elit, sed<br/>
+      blandit, eros sit amet euismod tincidunt, nisl leo vestibulum dui, sed<br/>
+      tincidunt lacus ligula eu sapien. Proin at diam tincidunt, tincidunt<br/>
+      ex at, venenatis nisl.
+    </font>
+  </p>
+
+  <blockquote>
+    <p>
+    <font size ="+1">
+    <em>
+      <b>Integer</b> auctor est ac fringilla euismod. Donec laoreet<br/>
+      urna vel diam blandit venenatis. Nam fermentum turpis a<br/>
+      mauris condimentum, vitae faucibus leo commodo.<br/>
+    </em>
+    </font>
+    </p>
+  </blockquote>
+
+  <p>
+    <font size="+1">
+      <b>Vestibulum</b> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec<br/>
+      sit amet ulla,corper turpis. Mauris eu tellus blandit turpis<br/>
+      fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit.<br/>
+      In hac habitasse platea dictumst.<br/>
+    </font>
+  </p>
+
+  <h2>TABLE</h2>
+
+  <table style="width:28%">
+    <thead style="text-indent:150px;font-weight:normal">
+      <th colspan="6">Scores by quarter</th>
+    </thead>
+    <tr style="font-weight:bold">
+      <td rowspan="2">Team Name</td>
+      <td colspan="2">First Half</td>
+      <td colspan="2">Second Half</td>
+      <td rowspan="2">Final</td>
+    </tr>
+    <tr style="font-weight:bold">
+      <td>Q1</td>
+      <td>Q2</td>
+      <td>Q3</td>
+      <td>Q4</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+      <td>7</td>
+      <td>3</td>
+      <td>0</td>
+      <td>7</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Chicago</td>
+      <td>0</td>
+      <td>6</td>
+      <td>3</td>
+      <td>6</td>
+      <td>15</td>
+    </tr>
+      <tfoot style="font-weight:bold">
+        <tr>
+          <td>Total</td>
+          <td>7</td>
+          <td>9</td>
+          <td>3</td>
+          <td>13</td>
+          <td>32</td>
+        </tr>
+      </tfoot>
+  </table>
+
+  <h2>LIST</h2>
+
+  <ul>
+    <li><image src = "https://sportslogohistory.com/wp-content/uploads/2017/12/denver_broncos_1997-pres.png"
+    width="70" height="70" alt="Denver Broncos logo"></li>
+    <li type="none"><a href= "https://www.denverbroncos.com/" target="_blank">Denver Broncos</a>
+      <ul>
+        <li>Coach: Gary Kubiak</li>
+        <li>QB</li>
+          <ol>
+            <li>Drew Lock</li>
+            <li>Brett Rypien</li>
+            <li>Jeff Driskel</li>
+          </ol>
+      </ul>
+  </ul>
+
+  <ul>
+    <li><image src = "https://cdn.bleacherreport.net/images/team_logos/328x328/chicago_bears.png"
+    width="70" height="70" alt="Chicago Bears logo"></li>
+    <li type="none"><a href= "https://www.chicagobears.com/" target="_blank">Chicago Bears</a>
+      <ul>
+        <li>Coach: Vic Fangio</li>
+        <li>QB</li>
+          <ol>
+            <li></li>
+            <li>Mitchell Trubisky</li>
+            <li>Nick Foles</li>
+          </ol>
+      </ul>
+  </ul>
+
+  <h2>FORM</h2>
+
+  <form action="/action_page.php">
+    <label for="fname">First:</label>
+    <input type="text" id="fname" name="fname" value="">
+    <label for="lname">Last:</label>
+    <input type="text" id="lname" name="lname" value=""><br>
+
+    <label for="sports">Favorite Sport:</label><br>
+    <select id="sports">
+      <option value="basketball">basketball</option>
+      <option value="soccer">Soccer</option>
+      <option value="lacrosse">Lacrosse</option>
+      <option value="tennis">Tennis</option>
+      <option value="ultimateFrisbee">UltimateFrisbee</option>
+      <option value="hockey">Hockey</option>
+      <option value="golfing">Golfing</option>
+      <option value="softball">Softbal</option>
+      <option value="Football" selected>Football</option>
+    </select><br>
+
+    <label for="checkbox">I have:</label>
+    <input type="checkbox" id="attended" name="participation1" value="attended">
+    <label for="attended">Attended</label>
+    <input type="checkbox" id="played" name="participation2" value="played">
+    <label for="played">Played</label>
+    <input type="checkbox" id="coached" name="participation3" value="coached">
+    <label for="coached">Coached</label>
+    <input type="checkbox" id="betOn" name="participation4" value="betOn">
+    <label for="betOn">Bet on<br>this sport.</label><br>
+
+    <label for="radio">For this sport I prefer the:</label>
+    <input type="radio" id="amateur" name="competitiveLevel" value="amateur">
+    <label for="Amateur">Amateur</label>
+    <input type="radio" id="college" name="competitiveLevel" value="college">
+    <label for="female">College</label>
+    <input type="radio" id="professional" name="competitiveLevel" value="professional">
+    <label for="other">Professional</label><br>
+    <input type="submit" value="Submit Query">
+</form>
